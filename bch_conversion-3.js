@@ -11,7 +11,7 @@ xmlhttp.onreadystatechange = function(){
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
             
-function parseJson_eth(json){
+function parseJson_bch(json){
 
 
 		var usdValue = json["ticker"]["price"];

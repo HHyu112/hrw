@@ -5,13 +5,13 @@ var url = "https://api.cryptonator.com/api/ticker/ltc-usd";
 xmlhttp.onreadystatechange = function(){
 		if (this.readyState == 4 && this.status ==200) {
 			var json = JSON.parse(this.responseText);
-		parseJson_eth(json);
+		parseJson_ltc(json);
 	}
 };
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
             
-function parseJson_eth(json){
+function parseJson_ltc(json){
 
 
 		var usdValue = json["ticker"]["price"];
